@@ -27,16 +27,15 @@ if ($has_video == 1) {
 
 $has_form = get_field('has_form');
 
-
 if ($has_form == 1) {
-    $form = get_field('gravity_form');
+    $form         = get_field('gravity_form');
     $shortcodes[] =  str_replace('%gravity_form_id%', \GFFormsModel::get_form_id($form['title']), '[et_pb_text admin_label="Form" background_layout="light" text_orientation="center" use_border_color="off" border_color="#ffffff" border_style="solid"][gravityform id="%gravity_form_id%" title="true" description="true"][/et_pb_text]');
 }
 
 $has_secondary_blurb = get_field('has_second_blurb');
 
 if ($has_secondary_blurb) {
-    $shortcodes[] = str_replace('%secondary_blurb_text%', get_field('secondary_blurb_text'), '[et_pb_text admin_label="Secondary Blurb" background_layout="light" text_orientation="center" use_border_color="off" border_color="#ffffff" border_style="solid"]%secondary_blurb_text%[/et_pb_text])');
+    $shortcodes[] = str_replace('%secondary_blurb_text%', get_field('secondary_blurb_text'), '[et_pb_text admin_label="Secondary Blurb" background_layout="light" text_orientation="center" use_border_color="off" border_color="#ffffff" border_style="solid"]%secondary_blurb_text%[/et_pb_text]');
 }
 
 $shortcodes[] ='[/et_pb_column][/et_pb_row][/et_pb_section]';
@@ -66,7 +65,7 @@ if ($has_faq == 'Yes') {
 
 // other resources.
 $has_related_resources = false;
-$related_resources = get_field('related_resources');
+$related_resources     = get_field('related_resources');
 if ($related_resources && is_array($related_resources) && !empty($related_resources)) {
     $has_related_resources = true;
     // TODO: find better UI for related resources.
@@ -84,7 +83,7 @@ if ($related_resources && is_array($related_resources) && !empty($related_resour
 
 $has_helpful_links  = false;
 if (have_rows('helpful_links')) {
-    $link_html = array('<ul>');
+    $link_html          = array('<ul>');
     $has_helpful_links  = true;
     while (have_rows('helpful_links')) : the_row();
 
@@ -110,11 +109,8 @@ if ($has_related_resources || $has_helpful_links) {
     $shortcodes[] = '[/et_pb_row][/et_pb_section]';
 }
 
-
-
 //Build the content
 $content = implode('', $shortcodes);
-
 
 echo '-->';
 ?>
