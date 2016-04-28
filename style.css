@@ -1,0 +1,119 @@
+/*
+ Theme Name:   M R K Development Pty Ltd
+ Theme URI:    http://divi.space/
+ Description:  A Child Theme built for Divi on Divi Space
+ Author:       M R K Development
+ Author URI:   http://www.mrkdevelopment.com
+ Template:     Divi
+ Version:      1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.tagcloud a:hover{color:#66a0aa;}
+.tagcloud a{border: 1px solid rgba(255,255,255,0.05);}
+
+.mrk-header .et_pb_fullwidth_header_subhead,
+.mrk-header h1{
+	line-height:1.2em;
+	padding-bottom: 10px;
+}
+
+.mrk-header p{
+	line-height:1.8em;
+}
+body .gform_wrapper .gform_footer input.button,
+body .gform_wrapper .gform_page_footer input.button{
+background-color:#afa376;
+color:#ffffff;
+border-width:4px;
+border-color:#c0b794;
+border-radius:31px;
+font-family:Lato;
+font-size:18px;
+letter-spacing:0px;
+}
+body .gform_wrapper .gform_footer input.button:hover,
+body .gform_wrapper .gform_page_footer input.button:hover{
+background-color:#afa376;
+color:#ffffff;
+border-color:#afa376;
+border-radius:3px;
+letter-spacing:0px;
+}
+body .gform_wrapper .gform_footer input.button, 
+body .gform_wrapper .gform_footer input.button:hover,
+body .gform_wrapper .gform_page_footer input.button:hover,
+submit .et_pb_button,
+body .et_pb_button{
+    color: #ffffff;
+}
+
+.et_pb_fullwidth_header_4.et_pb_fullwidth_header p{
+	line-height:1.2em;
+}
+
+/* attempt input update for member forms */
+#first_name,
+#last_name,
+#username,
+#email,
+#password,
+#password2,
+#user_login,
+#user_pass
+{
+    background-color: #eee;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 14px;
+    color: #999;
+    padding: 16px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	width:85%;
+}
+
+.ms-form.ms-no-labels p {
+    text-align: left;
+}
+
+.ms-signup-button,
+#register,
+#wp-submit{
+	color: #afa376;
+    border-color: #afa376;
+	display: inline-block;
+	background: 0 0;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em;
+    font-family: inherit;
+    color: inherit;
+    margin: 8px 0 0;
+    padding: 6px 20px;
+    border: 2px solid;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.ms-signup-button:hover,
+#register:hover,
+#wp-submit:hover{
+	background: rgba(0,0,0,.05);
+	border: 2px solid transparent;
+	cursor: pointer
+}
+
+span.et_pb_fullwidth_header_subhead{
+	line-height:1.4em;
+}
